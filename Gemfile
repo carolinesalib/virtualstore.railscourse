@@ -11,6 +11,8 @@ gem 'devise'
 gem 'devise-i18n'
 # Rails gem of the Bootstrap based admin theme SB Admin 2.
 gem 'bootstrap_sb_admin_base_v2'
+# The most popular front-end framework for developing responsive, mobile first projects on the web.
+gem 'rails-assets-bootstrap', source: 'https://rails-assets.org'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets

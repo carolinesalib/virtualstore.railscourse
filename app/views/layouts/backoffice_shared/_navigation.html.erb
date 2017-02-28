@@ -228,9 +228,10 @@
                 </li>
                 <li class="divider"></li>
                 <li>
-                    <a href="login.html">
-                        <i class="fa fa-sign-out fa-fw"></i>
-                        Logout</a>
+                  <%= link_to destroy_admin_session_path, method: :delete do %>
+                    <i class="fa fa-sign-out fa-fw"></i>
+                    Sair
+                  <% end %>
                 </li>
             </ul>
             <!-- /.dropdown-user -->

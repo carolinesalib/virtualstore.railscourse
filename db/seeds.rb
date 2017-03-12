@@ -16,3 +16,13 @@ categories.each do |category|
 end
 
 puts "All categories are registred"
+
+####################
+
+puts "Registering default administrator..."
+
+Admin.create!(email: "admin@virtualstore.com",
+              password: "123456",
+              password_confirmation: "123456")
+
+puts "The administrato are registered"

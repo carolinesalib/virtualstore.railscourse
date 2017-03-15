@@ -11,12 +11,6 @@ gem 'devise'
 gem 'devise-i18n'
 # Rails gem of the Bootstrap based admin theme SB Admin 2.
 gem 'bootstrap_sb_admin_base_v2'
-# The most popular front-end framework for developing responsive, mobile first projects on the web.
-gem 'rails-assets-bootstrap', source: 'https://rails-assets.org'
-# A simple, versatile notification library
-gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
-# A library for generating fake data such as names, addresses, and phone numbers.
-gem 'faker'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -25,9 +19,6 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -37,14 +28,14 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+source 'https://rails-assets.org' do
+  # The most popular front-end framework for developing responsive, mobile first projects on the web.
+  gem 'rails-assets-bootstrap', '3.3.7'
+  # A simple, versatile notification library
+  gem 'rails-assets-notifyjs'
+  # Wrappers for JavaScript alert(), confirm() and other flexible dialogs using Twitter's bootstrap framework
+  gem 'rails-assets-bootbox'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -60,4 +51,6 @@ group :development do
   gem 'better_errors'
   # Generate Entity-Relationship Diagrams for Rails applications
   gem 'rails-erd'
+  # A library for generating fake data such as names, addresses, and phone numbers.
+  gem 'faker'
 end

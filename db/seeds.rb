@@ -25,4 +25,4 @@ Admin.create!(email: "admin@virtualstore.com",
               password: "123456",
               password_confirmation: "123456")
 
-puts "The administrato are registered"
+puts "The administrator are registered"

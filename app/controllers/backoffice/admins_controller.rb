@@ -42,6 +42,17 @@ class Backoffice::AdminsController < BackofficeController
     end
   end
 
+  def destroy
+    admin_email = @admin.email
+
+    if @admin.destroy
+        redirect_to backoffice_admins_path,
+                    notice: "O administrador #{admin_email} foi excluído"\
+                    'com sucesso!'
+    else
+    end
+  end
+
   private
 
   def find_admin

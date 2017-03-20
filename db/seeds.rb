@@ -24,6 +24,7 @@ puts "Registering default administrator..."
 Admin.create!(email: "admin@virtualstore.com",
               name: "Administrador",
               password: "123456",
-              password_confirmation: "123456")
+              password_confirmation: "123456",
+              role: 0)
 
 puts "The administrator are registered"

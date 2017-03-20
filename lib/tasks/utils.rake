@@ -3,6 +3,7 @@ namespace :utils do
   task generate_admins: :environment do
     10.times do
       Admin.create!(email: Faker::Internet.email,
+                    name: Faker::Name.name,
                     password: "123456",
                     password_confirmation: "123456")
     end

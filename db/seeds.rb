@@ -22,6 +22,7 @@ puts "All categories are registred"
 puts "Registering default administrator..."
 
 Admin.create!(email: "admin@virtualstore.com",
+              name: "Administrador",
               password: "123456",
               password_confirmation: "123456")
 

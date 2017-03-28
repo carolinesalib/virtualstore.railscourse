@@ -7,6 +7,7 @@ class Backoffice::AdminsController < BackofficeController
 
   def new
     @admin = Admin.new
+    authorize @admin
   end
 
   def create
@@ -38,9 +39,9 @@ class Backoffice::AdminsController < BackofficeController
     admin_email = @admin.email
 
     if @admin.destroy
-        redirect_to backoffice_admins_path,
-                    notice: "O administrador #{admin_email} foi excluído"\
-                    'com sucesso!'
+      redirect_to backoffice_admins_path,
+                  notice: "O administrador #{admin_email} foi excluído"\
+                  'com sucesso!'
     else
     end
   end

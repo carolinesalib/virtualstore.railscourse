@@ -45,6 +45,8 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a
   # debugger console
   gem 'byebug'
+  # Catches mail and serves it through a dream.
+  gem 'mailcatcher'
 end
 
 group :development do

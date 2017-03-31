@@ -29,6 +29,7 @@ class Backoffice::AdminsController < BackofficeController
 
   def update
     if @admin.update(params_admin)
+      AdminMailer.update_email(current_admin, @admin).deliver_now
       redirect_to backoffice_admins_path,
                   notice: "O administrador #{@admin.email} foi cadastrado"\
                   'com sucesso!'

@@ -62,4 +62,6 @@ group :development do
   # A library for generating fake data such as names, addresses,
   # and phone numbers.
   gem 'faker'
+  # O Lero-lero Generator é uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que não tem conteúdo algum.
+  gem 'lerolero_generator'
 end

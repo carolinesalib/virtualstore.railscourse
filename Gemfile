@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # Minimal authorization through OO design and pure Ruby classes
 gem 'pundit'
+# Integration of RubyMoney - Money with Rails
+gem 'money-rails'
 
 source 'https://rails-assets.org' do
   # The most popular front-end framework for developing responsive,
